@@ -1,0 +1,16 @@
+BasedOnStyle: LLVM
+IndentWidth: 2
+ContinuationIndentWidth: 2
+
+AlignAfterOpenBracket: BlockIndent
+AlignEscapedNewlines: DontAlign
+AlignOperands: DontAlign
+
+AllowShortBlocksOnASingleLine: false
+AllowShortCaseLabelsOnASingleLine: false
+AllowShortEnumsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: false
+AllowShortIfStatementsOnASingleLine: false
+
+BinPackParameters: false
+BinPackArguments: false
