@@ -1,4 +1,6 @@
 // all-c - rc.h
+//
+// use `#define RC_SNAKE_CASE` for snake_case type names.
 
 #ifndef RC_H
 #define RC_H
@@ -6,7 +8,7 @@
 #include <stdint.h>
 #include <stdlib.h>
 
-#define RC_VERSION "0.1.0"
+#define RC_VERSION "0.2.0"
 
 typedef struct {
   void *val;
@@ -30,7 +32,6 @@ typedef void (*RcFreeFn)(void *);
   } Rc(TYPE);
 
 RC_DEFINE(char)
-/*
 RC_DEFINE(bool)
 RC_DEFINE(size_t)
 RC_DEFINE(ssize_t)
@@ -42,7 +43,6 @@ RC_DEFINE(uint8_t)
 RC_DEFINE(uint16_t)
 RC_DEFINE(uint32_t)
 RC_DEFINE(uint64_t)
-*/
 
 #define rc_new(TYPE, VAL, FREE_FN) \
   (rc_from_any(TYPE, rc_any_new((void *)VAL, FREE_FN)))
