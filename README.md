@@ -14,7 +14,7 @@ all libraries are located in `lib/` directory.
 
 if you're using a library that's just macros and type definitions, like `ansi.h`, all you have to do is `#include` it whereever you need, no extra steps need :3
 
-otherwise, you need to define an implementation file for your all-c libraries, usually either `main.c` or a dedicated `all_c.c` file. it doesn't as long as it's a `.c` file and is included in your projects compilation.
+otherwise, you need to define an implementation file for your all-c libraries, usually either `main.c` or a dedicated `all_c.c` file. it doesn't matter as long as it's a `.c` file and is included in your projects compilation.
 
 in your selected file, include `all_c_impl.h` at the very top to mark this file as your implemenation file. under that, just include all of the all-c libraries you using, such as `file.h` or `rc.h`. aaand done! you can use your all-c libaries as much as you'd like >w<
 
