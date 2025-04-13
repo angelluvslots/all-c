@@ -8,7 +8,7 @@
 #include <stdint.h>
 #include <stdlib.h>
 
-#define RC_VERSION "0.2.0"
+#define RC_VERSION "0.2.1"
 
 typedef struct {
   void *val;
@@ -88,7 +88,7 @@ void rc_any_free(RcAny rc);
 /// carefully.
 void rc_any_dec(RcAny rc);
 
-#define RC_IMPL
+// #define RC_IMPL
 #ifdef RC_IMPL
 
 #include <string.h>
